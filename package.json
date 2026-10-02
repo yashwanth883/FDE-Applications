@@ -1,0 +1,37 @@
+{
+  "name": "woocommerce-agent-studio-connector",
+  "version": "1.0.0",
+  "description": "Production-grade Model Context Protocol (MCP) private connector for WooCommerce, built for Razorpay Agent Studio",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/index.ts",
+    "mcp": "tsx src/index.ts --mode=mcp",
+    "demo": "tsx src/demo/scenario-runner.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "razorpay",
+    "agent-studio",
+    "mcp",
+    "model-context-protocol",
+    "woocommerce",
+    "connector",
+    "ai-agent"
+  ],
+  "author": "Yashwanth G R",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "dotenv": "^16.4.7",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.8"
+  }
+}
